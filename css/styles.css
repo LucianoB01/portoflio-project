@@ -5,9 +5,15 @@
     font-family: 'Playfair Display', serif;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     width: 100%;
 }
+
+/* ------ HEADER -------*/
 
 header {
     width: 100%;
@@ -72,7 +78,117 @@ header {
     margin: 10px;
 }
 
+.header-text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
 
+.text-developer {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+    margin-left: 5rem;
+}
+
+.text-developer h1 {
+    font-size: 2rem;
+}
+
+.text-developer h2 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: grey;
+    line-height: 1rem;
+}
+
+.text-portfolio {
+    grid-column: 3 / 6;
+    grid-row: 4 / 4;
+}
+
+.text-portfolio h1 {
+    font-size: 8rem;
+    line-height: 7rem;
+}
+
+.text-portfolio h2 {
+    font-weight: 400;
+    color: gray;
+    margin-left: 60%;
+}
+
+
+
+/* ------ HEADER -------*/
+
+.menu {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.menu-text {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.menu-text h1 {
+    font-size: 8rem;
+    margin-left: 3rem;
+}
+
+.menu-text p {
+    color: grey;
+    margin-left: -3rem;
+}
+
+.menu-section {
+    grid-column: 3 / 6;
+    grid-row: 1 / 3;
+    transform: rotate(-90deg);
+}
+
+.menu-section ul {
+    
+}
+
+.menu-section ul li {
+    list-style: none;
+    padding: 1.5rem;
+    margin: 8rem 0;
+}
+
+#li-proy {
+    background-color: #F5DBB3;
+    height: 10px;
+    width: 500px;
+}
+
+
+#li-abou {
+    background-color: #FFC700;
+    height: 10px;
+    width: 500px;
+}
+
+
+#li-conta {
+    background-color: #D1300D;
+    height: 10px;
+    width: 500px;
+}
+
+.menu-section ul li a {
+    position: relative;
+    top: -75px;
+    text-decoration: none;
+    color: #000;
+    font-size: 4rem;
+}
 
 
 
